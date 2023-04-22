@@ -1,312 +1,129 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# -----------------------------------------------------------------------------
+#  User configuration
+# -----------------------------------------------------------------------------
 
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+title: Sora
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # 전체적인 블로그의 색감을 정하는 값입니다.
-                            # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# The unique resource location of your page.
+# Set to `https://<username>.github.io` when hosting on GitHub Pages
+url: https://soraji.github.io
 
-# Site Settings
-locale                   : "ko-KR" # 블로그의 주요 언어입니다.
-title                    : "Seungju - 한승주 성장일지" # 사이트 탭에서 보이는 이름입니다.
-title_separator          : "-"
-subtitle                 : "version 1.0" # site tagline that appears below site title in masthead # 화면 title 하단에 있는 소제목입니다.
-name                     : "한승주(Han Seungju)" # 화면 하단 영역의 이름입니다.
-description              : "매일 반복하는 공부 습관"  # 설명란입니다.
-url                      : "https://cirruscloud94.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" # 현재의 블로그 url 입니다.
-baseurl                  : # the subpath of your site, e.g. "/blog" # 폴백(예기치 못한 오류)일 때 연결되는 url입니다.
-repository               : "https://github.com/cirruscloud94/cirruscloud94.github.io.git" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes" # Github Repo url입니다.
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" # 폴백일 때 보일 이미지입니다. "assets/images/"로 연결됩니다.
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" # 화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
-masthead_title           : "정리가 재밌는 개발자" # overrides the website title displayed in the masthead, use " " for no title  # 화면 title 입니다.
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-lunr:
-  search_within_pages    : # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+# Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
+# Set to '/<reponame>' when using the `gh-pages` branch of a repository
+baseurl: ""
 
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# A very short description of your page
+tagline: 지소라 성장일지
 
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+# A short description of the page, used in the sidebar and as fallback for the meta description tag.
+# Markdown enabled, but don't use more than one paragraph (enforced by `>`)
+description: >
+  노는것보다 배우는것을 좋아합니다 ෆ꒰◍ᐡᐤᐡ◍꒱
 
-
-# Site Author
+# This should be the same author as first entry in `_data/authors.yml`
 author:
-  name             : "Han Seungju" # 이름 영역입니다.
-  avatar           : "/assets/images/hsj-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg" # 프로필 사진 경로입니다.
-  bio              : "**기록이 자산!!**<br>매일 공부하고 있습니다.<br>소통을 좋아합니다."
-                    # biography의 약칭으로, 자기소개를 적으시면 됩니다.
-                    # 줄바꿈은 <br>로 굵은 글씨는 **글씨** 로 표기해주세요.
-  location         : "Republic of Korea" # 지역 입니다.
-  email            : # 이메일 주소입니다. (links에서 작성할 수 있기 때문에 생략하였습니다.)
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/cirruscloud94"
-    - label: "Instagram"                # 표시되는 이름입니다.
-      icon: "fab fa-fw fa-instagram"    # fab fa-fw fa-{SNS NAME} 으로 해주세요.
-      # url: "https://instagram.com/"   # 개인 SNS 계정 링크를 기재하면 됩니다.
+  name: sora ji
+  email: wlthfk0211@gmail.com
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/cirruscloud94"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+# Fallback image and color
+image: /assets/img/purple.jpg
+color: "#af69ee"
 
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading: "'Lato', 'Sans-serif'"
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
+# The text font. Expects a string that is a valid CSS font-family value.
+font: "'Lato', 'Sans-serif'"
+
+# The string encoding what fonts to fetch from Google Fonts.
+# See: https://qwtel.com/hydejack/docs/configuration/
+google_fonts: Lato
+
+# If you do not use a Google Fonts, uncomment the line below
+# no_google_fonts:     true
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+google_analytics: #UA-92346434-1
+
+# Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
+disqus_shortname: https-soraji-github-io-1
+
+# This text will appear in the footer of every page. Markdown enabled.
+copyright: "&copy; 2018. by sora"
+
+# Format of the permalinks
+permalink: pretty
+
+# Pagination configuration (used by the `blog` layout)
+paginate: 8
+paginate_path: "/page-:num/"
+
+# If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:              atom.xml
+
+# Set to true when building with the `--lsi` option
+# See: https://jekyllrb.com/docs/variables/#site-variables
+# use_lsi:             true
+
+# Set to `true` if you don't want to show an icon after each link that opens to an external site
+# no_mark_external:    true
+
+# Uncomment this line if third party plugins fail to work with dynimically loaded pages
+# disable_push_state:  true
+
+# Uncomment this line if want to disable the touch drawer on mobile
+# disable_drawer: true
+
+# -----------------------------------------------------------------------------
+#  Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  featured_categories:
+    permalink: /category/:name/
+    output: true
+  featured_tags:
+    permalink: /tag/:name/
+    output: true
+  projects:
+    permalink: /projects/:path/
+    output: true
+
+# -----------------------------------------------------------------------------
+#  Advanced configuration
+# -----------------------------------------------------------------------------
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
+  - README.md
+  - LICENSE.md
   - node_modules
   - package.json
   - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  - Gemfile
+  - Gemfile.lock
 
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
 
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 15 # Defaults : 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
+  comments: ["<!-- ", " -->"]
   clippings: all
+  endings: all
   ignore:
-    envs: development
+    envs: [development]
 
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments:  true
-      share: true
-      related: true
-      
-# _pages                      : 해당 하단 영역이 새로 추가되었습니다.
-#  - scope:
-#      path: "_pages"
-#      type: pages
-#    values:
-#      layout: single
-#      author_profile: true
-
-# comments
-comments:
-  provider    : "disqus"                                # comment 처리 사이트 명칭 기재
-              # false (default), "disqus", "discourse", "facebook"
-              # "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname : "cirruscloud94-github-io"                    # disqus의 shortname 기재
-              # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+sass:
+  style: compressed
