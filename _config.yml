@@ -2,18 +2,18 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title: Sora
+title: SeungJu
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url: https://soraji.github.io
+url: https://cirruscloud94.github.io/
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl: ""
 
 # A very short description of your page
-tagline: 지소라 성장일지
+tagline: 한승주 성장일지
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -22,8 +22,8 @@ description: >
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name: sora ji
-  email: wlthfk0211@gmail.com
+  name: seungju han
+  email: sraq94@gmail.com
 
 # Fallback image and color
 image: /assets/img/purple.jpg
@@ -50,7 +50,7 @@ google_analytics: #UA-92346434-1
 disqus_shortname: https-soraji-github-io-1
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright: "&copy; 2018. by sora"
+copyright: "&copy; 2023. by seungju"
 
 # Format of the permalinks
 permalink: pretty
