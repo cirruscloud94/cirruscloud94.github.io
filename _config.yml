@@ -13,12 +13,12 @@ url: https://cirruscloud94.github.io/
 baseurl: ""
 
 # A very short description of your page
-tagline: 한승주 성장일지
+tagline: 한승주의 일지
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description: >
-  노는것보다 배우는것을 좋아합니다 ෆ꒰◍ᐡᐤᐡ◍꒱
+  보다 편리한 것을 만들고 싶습니다 😎
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -27,7 +27,7 @@ author:
 
 # Fallback image and color
 image: /assets/img/purple.jpg
-color: "#af69ee"
+color: "#2e0da3"
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading: "'Lato', 'Sans-serif'"
@@ -47,7 +47,7 @@ google_fonts: Lato
 google_analytics: #UA-92346434-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus_shortname: https-soraji-github-io-1
+disqus_shortname: https-cirruscloud94-github-io-1
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright: "&copy; 2023. by seungju"
